@@ -17,12 +17,22 @@ li{
     margin: 0;
     padding: 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
+body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd{
     margin: 0;
     font-size: inherit;
 }
@@ -31,6 +41,9 @@ body{
     overflow-x: hidden;
     position: relative;
     color: #fff;
+    @extend %ubuntu-light;
+    font-size: 17px;
+    line-height: 26px; 
 }
 
 .container{
@@ -45,10 +58,14 @@ body{
     background-position: top center;
     background-size: cover;
     position: relative;
-    padding: 0 0 50px;
+    padding: 74px 0 50px;
 }
 .title{
-
+    @extend %sf-regular;
+    font-size: 44px;
+    line-height: 53px;
+    padding-left: 25px;
+    margin-bottom: 55px;
 }
 .scroll__btn{
     padding: 13px 0 30px;
@@ -57,4 +74,5 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
+    cursor: pointer;
 }

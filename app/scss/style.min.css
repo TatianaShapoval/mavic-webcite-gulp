@@ -1,29 +1,56 @@
-@font-face {
-  font-family: "Quicksand-Regular";
+.title {
+  font-family: "SFProDisplay-Regular", sans-serif;
   font-weight: 400;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+.header__inner {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.header__phone {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SFProDisplay-Light", sans-serif;
+  font-weight: 300;
   font-style: normal;
-  src: local("Quicksand-Medium"), url("../fonts/Quicksand-Regular.woff2") format("woff2"), url("../fonts/Quicksand-Regular.woff") format("woff");
+  src: local("SFProDisplay-Light"), url("../fonts/SFProDisplay-Light.woff2") format("woff2"), url("../fonts/SFProDisplay-Light.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Quicksand-Medium";
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local("SFProDisplay-Regular"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SFProDisplay-Medium", sans-serif;
   font-weight: 500;
   font-style: normal;
-  src: local("Quicksand-Medium"), url("../fonts/Quicksand-Medium.woff2") format("woff2"), url("../fonts/Quicksand-Medium.woff") format("woff");
+  src: local("SFProDisplay-Medium"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto-Regular";
-  font-weight: 400;
+  font-family: "SFProDisplay-Semibold", sans-serif;
+  font-weight: 600;
   font-style: normal;
-  src: local("Quicksand-Medium"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  src: local("SFProDisplay-Semibold"), url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Roboto-Bold";
+  font-family: "SFProDisplay-Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
-  src: local("Quicksand-Medium"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  src: local("SFProDisplay-Bold"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
   font-display: swap;
 }
 html {
@@ -49,12 +76,22 @@ li {
   padding: 0;
 }
 
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
   margin: 0;
   font-size: inherit;
 }
@@ -64,6 +101,8 @@ body {
   overflow-x: hidden;
   position: relative;
   color: #fff;
+  font-size: 17px;
+  line-height: 26px;
 }
 
 .container {
@@ -79,7 +118,14 @@ body {
   background-position: top center;
   background-size: cover;
   position: relative;
-  padding: 0 0 50px;
+  padding: 74px 0 50px;
+}
+
+.title {
+  font-size: 44px;
+  line-height: 53px;
+  padding-left: 25px;
+  margin-bottom: 55px;
 }
 
 .scroll__btn {
@@ -89,4 +135,43 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 30px;
+  right: 0;
+  z-index: 10;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 30px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 17px;
+}
+.header__btn {
+  color: #fff;
+  background-color: transparent;
+  padding: 6px 28px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-right: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header__phone {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.menu__list-item {
+  display: inline-block;
+}
+.menu__list-item + .menu__list-item {
+  padding-left: 20px;
 }

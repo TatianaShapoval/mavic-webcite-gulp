@@ -1,36 +1,49 @@
+
 @font-face {
-    font-family: 'Quicksand-Regular';
-    font-weight: 400;
+    font-family: 'SFProDisplay-Light', sans-serif;
+    font-weight: 300;
     font-style: normal;
-    src: local('Quicksand-Medium'),
-        url('../fonts/Quicksand-Regular.woff2') format('woff2'),
-        url('../fonts/Quicksand-Regular.woff') format('woff');
+    src: local('SFProDisplay-Light'),
+        url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Light.woff') format('woff');
     font-display: swap;
 }
 @font-face {
-    font-family: 'Quicksand-Medium';
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: local('SFProDisplay-Regular'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SFProDisplay-Medium', sans-serif;
     font-weight: 500;
     font-style: normal;
-    src: local('Quicksand-Medium'),
-        url('../fonts/Quicksand-Medium.woff2') format('woff2'),
-        url('../fonts/Quicksand-Medium.woff') format('woff');
+    src: local('SFProDisplay-Medium'),
+        url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Medium.woff') format('woff');
     font-display: swap;
 }
 @font-face {
-    font-family: 'Roboto-Regular';
-    font-weight: 400;
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-weight: 600;
     font-style: normal;
-    src: local('Quicksand-Medium'),
-        url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff');
+    src: local('SFProDisplay-Semibold'),
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Semibold.woff') format('woff');
     font-display: swap;
 }
 @font-face {
-    font-family: 'Roboto-Bold';
+    font-family: 'SFProDisplay-Bold', sans-serif;
     font-weight: 700;
     font-style: normal;
-    src: local('Quicksand-Medium'),
-        url('../fonts/Roboto-Bold.woff2') format('woff2'),
-        url('../fonts/Roboto-Bold.woff') format('woff');
+    src: local('SFProDisplay-Bold'),
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Bold.woff') format('woff');
     font-display: swap;
 }
+
+
+
