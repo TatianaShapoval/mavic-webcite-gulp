@@ -1,7 +1,7 @@
 {
-  "name": "first_online_shop",
+  "name": "mavic-webcite-gulp",
   "version": "1.0.0",
-  "description": "first online shop",
+  "description": "mavic-webcite-gulp",
   "main": "gulpfile.js",
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
